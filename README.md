@@ -42,7 +42,7 @@ D.	Use the features vector to replace the default variable names with their corr
 
 E.	From merged data set, create a data subset by extracting the subject, activity variables and all variables containing the mean() and std() feature values.
 
-F.	As a final step, create a second data set from the extracted subset from Step E and calculate the average of every feature for each activity category and each subject.
+F.	As a final step, create a second data set from the extracted subset from Step E and calculate the average of every feature for each activity category and each subject.  The tidy data set was written to the "tidydata.txt:" file.
 
 
 

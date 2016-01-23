@@ -74,8 +74,3 @@ data.all.final = aggregate(. ~subject + activity, data.all, mean)
 #View(data.all.2)
 
 write.table(data.all.final, file = "./data/tidydata.txt", row.names = FALSE)
-
-
-## 6. Produce Codebook
-#library(knitr)
-#knit2html(input = "./run_analysis.R", output = "codebook.Rmd", envir = globalenv(), encoding = "utf8")

@@ -73,4 +73,7 @@ names(data.all) = gsub("BodyBody", "Body", names(data.all))
 data.all.final = aggregate(. ~subject + activity, data.all, mean)
 #View(data.all.2)
 
+# Remove parenthesis from the mean() and std() variable names
+names(data.all.final) = gsub("\\(|\\)", "", names(data.all.final))
+
 write.table(data.all.final, file = "./data/tidydata.txt", row.names = FALSE)
